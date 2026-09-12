@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax</title>
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container card mt-4">
+        <h1 class="" style="text-align: center; color: rgb(5, 73, 28); font-weight: bold;">Sales Tax </h1>
+
+        <hr>
+
+        <div class="mb-3">
+            <label for="mealCost" class="form-label">Meal Cost</label>
+            <input class="form-control" type="number" id="price">
+        </div>
+
+
+        <div class="mb-3">
+            <label for="taxRate" class="form-label">Tax Rate</label>
+
+            <select name="tax_rate" id="taxRate" class="form-select">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+
+        </div>
+
+        <div class="mb-3">
+            <label for="tipAmount" class="form-label"> Tip Amount</label>
+            <input type="number" class="form-control" id="tipAmount">
+        </div>
+
+        <button onclick="CalculateBill()" class="btn btn-primary">
+            Calculate
+        </button>
+        
+        <p id="output" style="font-weight: bold; "></p>
+
+    </div>
+    
+    <script>
+
+        function CalculateBill(){
+
+            const mealCost = parseFloat(document.getElementById('price').value);
+
+            const taxRate = parseFloat(document.getElementById('taxRate').value);
+
+            const tipAmount = parseFloat(document.getElementById('tipAmount').value);
+
+            const mealWithTax = mealCost + (mealCost * taxRate / 100);
+
+            const finalBill = mealWithTax + tipAmount;
+
+            document.getElementById('output').textContent = finalBill
+
+
+        }
+    </script>
+</body>
+</html>

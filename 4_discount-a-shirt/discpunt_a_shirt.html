@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount-Shirt</title>
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card mt-4">
+            <h1 style="text-align: center;">Discount-Shirt</h1>
+            <hr>
+
+
+            <div class="mb-3">
+                <label for="price">Price</label>
+                <input type="number" class="form-control form-label" id="price">
+            </div>
+
+            <div class="mb-3 ">
+                <label for="discount">Discount</label>
+                <select name="discount" id="discount" class="form-control form-label">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="quality">Quality </label>
+                <input type="text" class="form-control form-label" id="quality">
+            </div>
+
+
+            <button onclick="CulculateDiscount()" class="btn btn-primary">Calculate</button>
+
+            <p id="output"></p>
+
+        </div>
+        
+
+    </div>
+
+    <script src="calculate_discount.js"></script>
+    
+</body>
+</html>

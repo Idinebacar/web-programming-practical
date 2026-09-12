@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>Groceries</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container card mt-5 " >
+
+        <div class="card mt-2">
+            <h1 class="text-center" style="color:blue; font-weight: bold;">
+               Total Cost Of Groceries
+            </h1>
+        </div> 
+
+        <div>
+            <form action="" class="form-control mt-2">
+
+                <div class="form-group ">
+                    <label>Number Of Apples (2 each)</label>
+                    <input class="form-control mt-2" type="number" name="apples" id="apple">
+                </div>
+
+                <div class="form-group  mt-2">
+                    <label>Number Of Bananas (1 each)</label>
+                    <input class="form-control mt-2" type="number" name="bananas" id="banana">
+                </div>
+
+                <div class="form-group  mt-2">
+
+                    <label>Fruit Type</label>
+
+                    <select class="form-control mt-2" id="fruitType">
+                        <option value="apple" selected>Apples</option>
+                        <option value="banana">Bananas</option>
+                        <option value="both">Both</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <button class="btn btn-primary mt-4" type="button" onclick="CalculateTotal()">
+                        Calculate
+                    </button>
+                </div>
+
+                <div class="mt-4">
+                    <p id="output"></p>
+                </div>
+
+            </form>
+        </div>
+
+        <script>
+
+            function CalculateTotal() {
+
+                const apples = parseFloat(document.getElementById('apple').value);
+
+                const bananas = parseFloat(document.getElementById('banana').value);
+
+                const fruitType = document.getElementById('fruitType').value;
+
+                const applePrice = 2;
+                const bananaPrice = 1;
+
+                let total = 0;
+
+                if (fruitType === "apple") {
+
+                    total = applePrice * apples;
+
+                } else if (fruitType === "banana") {
+
+                    total = bananaPrice * bananas;
+
+                } else {
+
+                    total = (applePrice * apples) + (bananaPrice * bananas);
+                }
+
+                document.getElementById("output").textContent = "Total: " + total;
+            }
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>
