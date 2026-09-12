@@ -1,4 +1,4 @@
-# Web Programming Practical — Mini Projects
+# Web Programming Practical Mini Projects
 
 A collection of small, self-contained web mini-projects built for practice.
 
