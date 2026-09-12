@@ -29,9 +29,9 @@ _(More tasks will be added as they're completed)_
 
 ## Tech Stack
 
-- **HTML5** — page structure
-- **Bootstrap 5** — layout, forms, and styling (via CDN)
-- **JavaScript (vanilla)** — input handling and calculations
+- **HTML5** page structure
+- **Bootstrap 5** layout, forms, and styling (via CDN)
+- **JavaScript (vanilla)** input handling and calculations
 
 ## How to Run
 
