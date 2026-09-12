@@ -1,18 +1,29 @@
 # Web Programming Practical Mini Projects
 
-A collection of small, self-contained web mini-projects built for practice.
+A collection of small web mini-projects I built for practice.
 
 ## About
 
-This repository contains a set of small, self-contained web mini-projects. Each folder is an independent HTML page built with **Bootstrap** for styling and **vanilla JavaScript** for the calculations — no frameworks, no build tools, just open the file in a browser.
+This repo has a bunch of small, standalone HTML pages. Each one is built with Bootstrap for styling and plain JavaScript for the calculations. No frameworks, no build tools, just open the file in your browser and it works.
 
-Each task uses a different Bootstrap style or UI approach (floating labels, input groups, gradient headers, badges, etc.) as a way to practice multiple ways of building the same kind of interface.
+Every project follows the same basic pattern:
 
-Every project follows the same core pattern:
+- A form with number inputs and a dropdown
+- A Calculate button
+- A result shown right on the page
 
-- A form with number inputs and a select dropdown
-- A **Calculate** button
-- A live result shown on the page
+## Practicing Bootstrap
+
+Instead of using the same layout for every task, I tried to style each one a bit differently. The idea was to get comfortable with more of Bootstrap, not just one form design repeated 40 times. Some things you'll see across the projects:
+
+- Basic layout with container, row/col, and card
+- Regular form inputs, floating labels, and input groups with icons or text
+- Different button styles, including pill shaped buttons
+- Gradient headers, shadows, rounded corners, and styled result boxes
+- Bootstrap Icons used in buttons and headers
+- Spacing and alignment utility classes
+
+The JavaScript stays simple and mostly the same across tasks. The main variety is in how each page looks and is built.
 
 ## Project List
 
@@ -25,23 +36,23 @@ Every project follows the same core pattern:
 | 5   | `5_splitting_a_bill`        | Splitting a Bill                |
 | 6   | `6_change_from_a_purchase`  | Change from a Purchase          |
 
-_(More tasks will be added as they're completed)_
+More tasks will be added as I finish them.
 
 ## Tech Stack
 
-- **HTML5** page structure
-- **Bootstrap 5** layout, forms, and styling (via CDN)
-- **JavaScript (vanilla)** input handling and calculations
+- HTML5 for page structure
+- Bootstrap 5 for layout, forms, and styling (via CDN)
+- Vanilla JavaScript for input handling and calculations
 
 ## How to Run
 
-No installation needed — each project is a single static page.
+No installation needed, each project is just a static page.
 
 1. Clone the repo:
    ```bash
    git clone https://github.com/Idinebacar/web-programming-practical.git
    ```
-2. Open any project folder and double-click its `.html` (or open it directly in your browser).
+2. Open any project folder and double click its `.html` file, or open it directly in your browser.
 
 ## License
 
