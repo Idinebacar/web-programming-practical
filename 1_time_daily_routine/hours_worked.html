@@ -5,109 +5,114 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 
-<body> 
-    <div class="container justify-center mt-4 ">
+<body>
+    <div class="container  justify-content-center mt-4">
 
         <h1 style="color: green; font-weight: bold; font-family: 'Times New Roman', Times, serif; text-align: center;">
             Time and Daily Routine
         </h1>
         <hr>
 
-        <form action="#" class="form-control" method="get">
+        <form action="#" class="form-control " method="get">
 
-        <div class="row p-3 justify-center">
+            <div class="p-3 justify-content-center d-f">
 
-            <div class="form-group col-md-6">
-                <label for="hours">Hours Per Day:</label>
-                <input class="form-control" type="number" name="hours-per-day" id="hoursPerDay">
+                <div class="form-group ">
+                    <label for="hoursPerDay">Hours Per Day:</label>
+                    <input class="form-control" type="number" name="hours-per-day" id="hoursPerDay">
+                </div>
+
+                <div class="form-group  mt-4">
+                    <label for="days">Days:</label>
+                    <input class="form-control" type="number" name="days" id="days">
+                </div>
+
+                <div class="form-group  mt-4">
+
+                    <label for="workType">Work Type:</label>
+
+                    <select name="work-type" id="workType" class="form-control" onchange="calculateTotalHours()">
+
+                        <option value="Full-time" selected>Full-time</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Over-time">Over-time</option>
+                        <option value="Freelance">Freelance</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class=" mt-4">
+                    <label for="totalHours">Total Hours:</label>
+                    <p class="form-control" id="totalHours"></p>
+                </div>
+
+
+                <div class="form-group col-md-6">
+                    <label>&nbsp;</label>
+                    <button class="btn btn-success mt-4" type="button" name="cmd_submit" id="cmd_submit"
+                        onclick="calculateTotalHours()">Calculate</button>
+                </div>
+
             </div>
-
-            <div class="form-group col-md-6 mt-4">
-                <label for="days">Days:</label>
-                <input class="form-control " type="number" name="days" id="days">
-            </div>
-
-            <div class="form-group col-md-6 mt-4">
-
-                <label for="days">Work Type:</label>
-
-                <select name="work-type" id="workType" class="form-control" onchange="calculateTotalHours()">
-
-                    <option value="Full-time" selected>Full-time</option>
-                    <option value="Part-time">Part-time</option>
-                    <option value="Over-time">Over-time</option>
-                    <option value="Freelance">Freelance</option>
-                </select>
-                </select>
-                
-            </div>
-            
-
-            <div class="col-md-6 col-md-6 mt-4">
-                <label for="hours">Total Hours:</label>
-                <input class="form-control " name="total-hours" id="totalHours">
-            </div>
-
-            <div class="form-group col-md-6">
-                <label>&nbsp;</label>
-                <button class="btn btn-success mt-4 " type="button" name="cmd_submit" id="cmd_submit" oninput="calculateTotalHours()">Calculate</button>
-            </div>
-
-        </div>
-    </form>
+        </form>
 
 
 
 
-   <script>
+        <script>
 
-        
-        const hoursPerDay = document.getElementById("hoursPerDay");
+            const hoursPerDay = document.getElementById("hoursPerDay");
 
-        const days = document.getElementById("days");
+            const days = document.getElementById("days");
 
-        const totalHours = document.getElementById("totalHours");
+            const totalHours = document.getElementById("totalHours");
 
-        const work_type_value = document.getElementById("workType");
+            const work_type_value = document.getElementById("workType");
 
 
-        
-        function calculateTotalHours() {
 
-            try{
+            function calculateTotalHours() {
 
-                const workType_stat = work_type_value.value;
-                const hours = Number(hoursPerDay.value);
-                const numberOfDays = Number(days.value);
+                try {
 
-                let total = 0;
+                    const workType_stat = work_type_value.value;
 
-                if (workType_stat === "Full-time") 
-                { 
-                    total = hours * numberOfDays; 
+                    const hours = Number(hoursPerDay.value);
 
-                } else if(workType_stat === "Part-time"){
+                    const numberOfDays = Number(days.value);
 
-                    total = (hours / 2) * numberOfDays; 
+                    let total = 0;
 
-                } else if(workType_stat === "Over-time"){
+                    if (workType_stat === "Full-time") {
 
-                    total = (hours + 4) * numberOfDays; 
+                        total = hours * numberOfDays;
 
-                }else if(workType_stat === "Freelance"){
+                    } else if (workType_stat === "Part-time") {
 
-                    total = hours  * numberOfDays; 
+                        total = (hours / 2) * numberOfDays;
+
+                    } else if (workType_stat === "Over-time") {
+
+                        total = (hours + 4) * numberOfDays;
+
+                    } else if (workType_stat === "Freelance") {
+
+                        total = hours * numberOfDays;
+                    }
+
+                    totalHours.textContent = total;
+
+                } catch (error) {
+
+                    totalHours.textContent = "Error !" + error.message
+
                 }
 
-                totalHours.value = total;
-
-            }catch(error){
-                
-                totalHours.value = "Error !" + error.message
             }
-    
-        }
 
-    </script>
+        </script>
 </body>
+
 </html>
