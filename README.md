@@ -35,6 +35,7 @@ The JavaScript stays simple and mostly the same across tasks. The main variety i
 | 4   | `4_discount_a_shirt`        | Discount on a Shirt             |
 | 5   | `5_splitting_a_bill`        | Splitting a Bill                |
 | 6   | `6_change_from_a_purchase`  | Change from a Purchase          |
+| 7   | `7_unit_price_comparison`   | Unit Price Comparison           |
 
 More tasks will be added as I finish them.
 
