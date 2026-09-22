@@ -22,8 +22,11 @@ Instead of using the same layout for every task, I tried to style each one a bit
 - Gradient headers, shadows, rounded corners, and styled result boxes
 - Bootstrap Icons used in buttons and headers
 - Spacing and alignment utility classes
+- The Collapse component, for animating a result into view instead of just showing it instantly
 
-The JavaScript stays simple and mostly the same across tasks. The main variety is in how each page looks and is built.
+## Practicing JavaScript
+
+The calculations stay simple, but a few tasks also add basic input validation, checking for empty or invalid values and throwing a clear error message instead of just showing a broken result.
 
 ## Project List
 
@@ -36,6 +39,8 @@ The JavaScript stays simple and mostly the same across tasks. The main variety i
 | 5   | `5_splitting_a_bill`        | Splitting a Bill                |
 | 6   | `6_change_from_a_purchase`  | Change from a Purchase          |
 | 7   | `7_unit_price_comparison`   | Unit Price Comparison           |
+| 8   | `8_percentage_savings`      | Percentage Savings              |
+| 9   | `9_doubling_a_recipe`       | Doubling a Recipe               |
 
 More tasks will be added as I finish them.
 
