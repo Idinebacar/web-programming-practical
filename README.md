@@ -58,7 +58,9 @@ No installation needed, each project is just a static page.
    ```bash
    git clone https://github.com/Idinebacar/web-programming-practical.git
    ```
-2. Open any project folder and double click its `.html` file, or open it directly in your browser.
+2. Some tasks link to a local `bootstrap` folder (`../bootstrap/css/bootstrap.min.css`). If that folder isn't in the repo, download Bootstrap from the official site and place it one level above the task folders:
+   [https://getbootstrap.com/docs/5.3/getting-started/download/](https://getbootstrap.com/docs/5.3/getting-started/download/)
+3. Open any project folder and double click its `.html` file, or open it directly in your browser.
 
 ## License
 
