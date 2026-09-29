@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Time per Item</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+
+        <div class=" row justify-content-center">
+
+            <div class="col-md-6">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body py-4">
+
+                        <h2 class="text-center mb-4"
+                         style="font-family: 'Times New Roman', Times, serif;">
+                         Cooking Time per Item
+                        </h2>
+
+
+                        <div class="mb-3">
+                            <label for="totalTime" 
+                            class="form-label" style="font-family: 'Times New Roman', Times, serif;">Total Time</label>
+                            <input type="number" id="totalTime" 
+                            class="form-control" placeholder="e.g. 40">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="items" class="form-label" style="font-family: 'Times New Roman', Times, serif;">Number of Items</label>
+                            <input type="number" id="items" class="form-control" placeholder="e.g. 12">
+                        </div>
+
+
+                        <div class="mb-4">
+                            <label for="timeUnit" class="form-label" style="font-family: 'Times New Roman', Times, serif;">Time Unit</label>
+                            <select id="timeUnit" class="form-select">
+                                <option value="Minutes" selected>Minutes</option>
+                                <option value="Seconds">Seconds</option>
+                                <option value="Hours">Hours</option>
+                            </select>
+                        </div>
+
+
+                         <button onclick="calculateCookingTime()" 
+                         class="btn btn-primary w-100" style="font-family: 'Times New Roman', Times, serif;">Calculate</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="resultToast" class="toast align-items-center text-bg-primary border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body" id="output"></div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS in its own file, loaded here -->
+    <script src="calculate.js"></script>
+
+    <!-- Bootstrap's bundled JS is required for the Toast component to work -->
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>
