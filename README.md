@@ -23,6 +23,7 @@ Instead of using the same layout for every task, I tried to style each one a bit
 - Bootstrap Icons used in buttons and headers
 - Spacing and alignment utility classes
 - The Collapse component, for animating a result into view instead of just showing it instantly
+- The Toast component, for showing a result as a floating notification instead of a fixed box on the page
 
 ## Practicing JavaScript
 
@@ -41,6 +42,7 @@ The calculations stay simple, but a few tasks also add basic input validation, c
 | 7   | `7_unit_price_comparison`   | Unit Price Comparison           |
 | 8   | `8_percentage_savings`      | Percentage Savings              |
 | 9   | `9_doubling_a_recipe`       | Doubling a Recipe               |
+| 10  | `10_cooking_time_per_item`  | Cooking Time per Item           |
 
 More tasks will be added as I finish them.
 
