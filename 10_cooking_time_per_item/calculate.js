@@ -7,7 +7,7 @@ function calculateCookingTime()
         const items = Number(document.getElementById("items").value);
         const timeUnit = document.getElementById("timeUnit").value;
 
-        if (!totalTime || !items) // fixed: "items" -> "!items"
+        if (!totalTime || !items) 
         {
             throw new Error("Please enter both total time and number of the items.");
         }
