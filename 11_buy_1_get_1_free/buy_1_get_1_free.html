@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy 1 Get 1 Free</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body class="bg-light">
+    
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        
+                        <h3 class="card-title text-center mb-4">
+                            Buy 1 Get 1 Free
+                        </h3>
+
+                        <!-- price input -->
+                        <div class="mb-3">
+                            <label for="price" class="form-label"> Price per Item</label>
+                            <input type="number" id="price" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="paidItems" >Number of Items You Want</label>
+                            <input type="number" class="form-control" id="paidItems">
+                        </div>
+
+                        <!-- Promo type select -->
+                        <div class="mb-3">
+                            <label for="promoType" class="form-label">Promo Type</label>
+                            <select id="promoType" class="form-select">
+                                <option value="1-1">Buy 1 Get 1</option>
+                                <option value="2-1">Buy 2 Get 1</option>
+                                <option value="1-2">Buy 1 Get 2</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary w-100 " onclick="calculatePromo()">
+                            Calculate
+                        </button>
+
+                        <p class="text-center fw-bold mt-4 fs-5" id="result"></p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="calculate_promo.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
