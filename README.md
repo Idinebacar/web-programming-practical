@@ -1,69 +1,80 @@
 # Web Programming Practical Mini Projects
 
-A collection of small web mini-projects I built for practice.
+A collection of small, standalone web mini-projects built for practice.
 
 ## About
 
-This repo has a bunch of small, standalone HTML pages. Each one is built with Bootstrap for styling and plain JavaScript for the calculations. No frameworks, no build tools, just open the file in your browser and it works.
+This repository contains small web applications created while practicing HTML, Bootstrap, and JavaScript. Each project focuses on a practical everyday calculation, using simple forms and interactive results.
 
-Every project follows the same basic pattern:
+No frameworks or build tools are required. Just open the HTML file in your browser and try it out.
 
-- A form with number inputs and a dropdown
+Every project follows a similar pattern:
+
+- A form with number inputs and, where needed, a dropdown
 - A Calculate button
-- A result shown right on the page
+- Results displayed directly on the page
 
 ## Practicing Bootstrap
 
-Instead of using the same layout for every task, I tried to style each one a bit differently. The idea was to get comfortable with more of Bootstrap, not just one form design repeated 40 times. Some things you'll see across the projects:
+Instead of using the same layout for every task, I experiment with different Bootstrap components and styles to improve my frontend development skills.
 
-- Basic layout with container, row/col, and card
-- Regular form inputs, floating labels, and input groups with icons or text
-- Different button styles, including pill shaped buttons
-- Gradient headers, shadows, rounded corners, and styled result boxes
-- Bootstrap Icons used in buttons and headers
-- Spacing and alignment utility classes
-- The Collapse component, for animating a result into view instead of just showing it instantly
-- The Toast component, for showing a result as a floating notification instead of a fixed box on the page
+Examples include:
+
+- Layouts using containers, rows, columns, and cards
+- Form controls, floating labels, and input groups
+- Different button styles, including rounded buttons
+- Gradient headers, shadows, and rounded corners
+- Bootstrap Icons in buttons and headers
+- Spacing and alignment utilities
+- Collapse components for animated results
+- Toast notifications for displaying results
 
 ## Practicing JavaScript
 
-The calculations stay simple, but a few tasks also add basic input validation, checking for empty or invalid values and throwing a clear error message instead of just showing a broken result.
+The projects use vanilla JavaScript to read user input, perform calculations, and display results. Some projects also include input validation to handle empty, invalid, or non-positive values and provide helpful error messages.
 
 ## Project List
 
-| #   | Folder                      | Task                            |
-| --- | --------------------------- | ------------------------------- |
-| 1   | `1_time_daily_routine`      | Time & Daily Routine calculator |
-| 2   | `2_total_cost_of_groceries` | Total Cost of Groceries         |
-| 3   | `3__sale_tax`               | Sales Tax                       |
-| 4   | `4_discount_a_shirt`        | Discount on a Shirt             |
-| 5   | `5_splitting_a_bill`        | Splitting a Bill                |
-| 6   | `6_change_from_a_purchase`  | Change from a Purchase          |
-| 7   | `7_unit_price_comparison`   | Unit Price Comparison           |
-| 8   | `8_percentage_savings`      | Percentage Savings              |
-| 9   | `9_doubling_a_recipe`       | Doubling a Recipe               |
-| 10  | `10_cooking_time_per_item`  | Cooking Time per Item           |
+| # | Folder | Task |
+|---|---|---|
+| 1 | `1_time_daily_routine` | Time & Daily Routine Calculator |
+| 2 | `2_total_cost_of_groceries` | Total Cost of Groceries |
+| 3 | `3__sale_tax` | Sales Tax |
+| 4 | `4_discount_a_shirt` | Discount on a Shirt |
+| 5 | `5_splitting_a_bill` | Splitting a Bill |
+| 6 | `6_change_from_a_purchase` | Change from a Purchase |
+| 7 | `7_unit_price_comparison` | Unit Price Comparison |
+| 8 | `8_percentage_savings` | Percentage Savings |
+| 9 | `9_doubling_a_recipe` | Doubling a Recipe |
+| 10 | `10_cooking_time_per_item` | Cooking Time per Item |
+| 11 | `11_buy_1_get_1_free` | Buy 1 Get 1 Free Promotion Calculator |
 
-More tasks will be added as I finish them.
+More projects will be added as I continue practicing and learning.
 
 ## Tech Stack
 
-- HTML5 for page structure
-- Bootstrap 5 for layout, forms, and styling (via CDN)
-- Vanilla JavaScript for input handling and calculations
+- **HTML5** — page structure
+- **Bootstrap 5** — responsive layouts, forms, and styling
+- **Vanilla JavaScript** — input handling, validation, and calculations
 
 ## How to Run
 
-No installation needed, each project is just a static page.
+No installation or build process is required.
 
-1. Clone the repo:
+1. Clone the repository:
+
    ```bash
    git clone https://github.com/Idinebacar/web-programming-practical.git
    ```
-2. Some tasks link to a local `bootstrap` folder (`../bootstrap/css/bootstrap.min.css`). If that folder isn't in the repo, download Bootstrap from the official site and place it one level above the task folders:
-   [https://getbootstrap.com/docs/5.3/getting-started/download/](https://getbootstrap.com/docs/5.3/getting-started/download/)
-3. Open any project folder and double click its `.html` file, or open it directly in your browser.
+
+2. Make sure the Bootstrap files are available if a project uses local Bootstrap paths such as `../bootstrap/css/bootstrap.min.css`.
+
+   Download Bootstrap from the official website:
+
+   https://getbootstrap.com/docs/5.3/getting-started/download/
+
+3. Open a project's folder and double-click its HTML file, or open it in your browser.
 
 ## License
 
-Free to use for learning purposes.
+Free to use for learning and educational purposes.
