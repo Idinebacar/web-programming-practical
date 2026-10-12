@@ -48,6 +48,7 @@ The projects use vanilla JavaScript to read user input, perform calculations, an
 | 9 | `9_doubling_a_recipe` | Doubling a Recipe |
 | 10 | `10_cooking_time_per_item` | Cooking Time per Item |
 | 11 | `11_buy_1_get_1_free` | Buy 1 Get 1 Free Promotion Calculator |
+| 12 | `12_pizza_slices` | Pizza Slices Calculator |
 
 More projects will be added as I continue practicing and learning.
 
