@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Slices</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                    <div class="alert alert-primary">
+                    <h2 class="text-center mb-3">Pizza Slices</h2>
+                    </div>
+                <div class="list-group shadow-sm">
+                    <div class="list-group-item">
+                        <div class="mb-0">
+                            <label for="totalSlices" class=form-label>Total slices</label>
+                            <input type="number" id="totalSlices" class="form-control" placeholder="e.g. 8">
+                        </div>
+                    </div>
+
+                    <div class="list-group-item">
+                        <div class="mb-0">
+                            <label for="people" class="form-label">Number of people</label>
+                            <input type="number" id="people" class="form-control" placeholder="e.g. 3">
+                        </div>
+                    </div>
+
+                    <div class="list-group-item">
+                        <div class="mb-0">
+                            <label for="slicesEach" class="form-label">Slices each person eats</label>
+                            <input type="number" class="form-control" id="slicesEach" placeholder="e.g. 2">
+                        </div>
+                    </div>
+
+                    <div class="list-group-item">
+                        <div class="mb-0">
+                            <label for="size" class="form-label">Pizza size</label>
+                            <select id="size" class="form-select">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item bg-body-tertiary">
+                        <button type="button" class="btn btn-dark w-100" onclick="calculatePizzaSlices()">Calculate</button>
+                    </div>
+
+                    <p id="result" class="list-group-item list-group-item-primary fs-5 text-center fw-semibold mb-0"></p>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="calculate_pizza_slices.js"></script>
+    
+</body>
+</html>
