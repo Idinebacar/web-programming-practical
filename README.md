@@ -49,14 +49,15 @@ The projects use vanilla JavaScript to read user input, perform calculations, an
 | 10 | `10_cooking_time_per_item` | Cooking Time per Item |
 | 11 | `11_buy_1_get_1_free` | Buy 1 Get 1 Free Promotion Calculator |
 | 12 | `12_pizza_slices` | Pizza Slices Calculator |
+| 13 | `13_grocery_budget` | Grocery Budget |
 
 More projects will be added as I continue practicing and learning.
 
 ## Tech Stack
 
-- **HTML5** — page structure
-- **Bootstrap 5** — responsive layouts, forms, and styling
-- **Vanilla JavaScript** — input handling, validation, and calculations
+- **HTML5**: page structure
+- **Bootstrap 5**: responsive layouts, forms, and styling
+- **Vanilla JavaScript**: input handling, validation, and calculations
 
 ## How to Run
 
@@ -64,9 +65,9 @@ No installation or build process is required.
 
 1. Clone the repository:
 
-   ```bash
+```bash
    git clone https://github.com/Idinebacar/web-programming-practical.git
-   ```
+```
 
 2. Make sure the Bootstrap files are available if a project uses local Bootstrap paths such as `../bootstrap/css/bootstrap.min.css`.
 
